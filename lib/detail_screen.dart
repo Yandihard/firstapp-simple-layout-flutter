@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const informationTextStyle = TextStyle(fontFamily: 'Oxygen');
+
 class DetailScreen extends StatelessWidget {
   const DetailScreen({Key? key}) : super(key: key);
 
@@ -19,12 +21,12 @@ class DetailScreen extends StatelessWidget {
                       textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 30.0,
+                          fontFamily: 'Staatliches',
                           fontWeight: FontWeight.bold,
                   ),
                 ),
                 ),
                 Container(
-
                     margin: const EdgeInsets.symmetric(vertical: 16.0),
                     child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -33,21 +35,30 @@ class DetailScreen extends StatelessWidget {
                           children: const <Widget>[
                             Icon(Icons.calendar_today),
                             SizedBox(height: 8.0),
-                            Text('Open Everyday'),
+                            Text(
+                              'Open Everyday',
+                              style: informationTextStyle,
+                              ),
                           ],
                         ),
                         Column(
                           children: const <Widget>[
                             Icon(Icons.access_time),
                             SizedBox(height: 8.0),
-                            Text('09:00 - 20:00'),
+                            Text(
+                              '09:00 - 20:00',
+                              style: informationTextStyle,
+                              ),
                           ],
                         ),
                         Column(
                           children: const <Widget>[
                             Icon(Icons.monetization_on),
                             SizedBox(height: 8.0),
-                            Text('RP 25.000'),
+                            Text(
+                              'RP 25.000',
+                              style: informationTextStyle,
+                              ),
                           ],
                         ),
                       ],
